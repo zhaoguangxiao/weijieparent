@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/domains/domain-mybatis/domain-mybatis.iml" filepath="$PROJECT_DIR$/domains/domain-mybatis/domain-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domains/domain-spi/domain-spi.iml" filepath="$PROJECT_DIR$/domains/domain-spi/domain-spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domains/domains.iml" filepath="$PROJECT_DIR$/domains/domains.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/service-impl/service-impl.iml" filepath="$PROJECT_DIR$/services/service-impl/service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/service-spi/service-spi.iml" filepath="$PROJECT_DIR$/services/service-spi/service-spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sites/sites.iml" filepath="$PROJECT_DIR$/sites/sites.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-controller/web-controller.iml" filepath="$PROJECT_DIR$/web-controller/web-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sites/webbm/webbm.iml" filepath="$PROJECT_DIR$/sites/webbm/webbm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weijie-parent.iml" filepath="$PROJECT_DIR$/weijie-parent.iml" />
+    </modules>
+  </component>
+</project>

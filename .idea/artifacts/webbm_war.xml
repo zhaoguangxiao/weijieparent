@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webbm:war">
+    <output-path>$PROJECT_DIR$/sites/webbm/target</output-path>
+    <root id="archive" name="webbm-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="webbm:war exploded" />
+    </root>
+  </artifact>
+</component>
