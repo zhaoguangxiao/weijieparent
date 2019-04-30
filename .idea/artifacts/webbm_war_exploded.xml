@@ -27,6 +27,12 @@
           <element id="archive" name="service-spi-1.0-SNAPSHOT.jar">
             <element id="module-output" name="service-spi" />
           </element>
+          <element id="archive" name="domain-mybatis-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="domain-mybatis" />
+          </element>
+          <element id="archive" name="domain-pojo-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="domain-pojo" />
+          </element>
           <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:4.0.0" />
           <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:0.9.1" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.8" />
