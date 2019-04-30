@@ -11,7 +11,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>service-spi</module>
-        <module>service-impl</module>
     </modules>
     <artifactId>services</artifactId>
 
@@ -37,10 +36,10 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-aspects</artifactId>
     </dependency>
-    <!--<dependency>-->
-        <!--<groupId>org.springframework</groupId>-->
-        <!--<artifactId>spring-jms</artifactId>-->
-    <!--</dependency>-->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jms</artifactId>
+    </dependency>
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context-support</artifactId>
@@ -49,5 +48,6 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-test</artifactId>
     </dependency>
+
     </dependencies>
 </project>

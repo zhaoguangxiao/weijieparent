@@ -8,8 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="domain-mybatis" />
         <module name="domain-pojo" />
-        <module name="domain-spi" />
-        <module name="service-impl" />
         <module name="service-spi" />
         <module name="web-controller" />
         <module name="webbm" />
