@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="domain-mybatis" />
+        <module name="domain-pojo" />
         <module name="domain-spi" />
         <module name="service-impl" />
         <module name="service-spi" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="domain-mybatis" target="1.5" />
+      <module name="domain-pojo" target="1.5" />
       <module name="domain-spi" target="1.5" />
       <module name="domains" target="1.5" />
       <module name="service-impl" target="1.5" />

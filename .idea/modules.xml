@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/domains/domain-mybatis/domain-mybatis.iml" filepath="$PROJECT_DIR$/domains/domain-mybatis/domain-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domains/domain-pojo/domain-pojo.iml" filepath="$PROJECT_DIR$/domains/domain-pojo/domain-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/domains/domain-spi/domain-spi.iml" filepath="$PROJECT_DIR$/domains/domain-spi/domain-spi.iml" />
       <module fileurl="file://$PROJECT_DIR$/domains/domains.iml" filepath="$PROJECT_DIR$/domains/domains.iml" />
       <module fileurl="file://$PROJECT_DIR$/services/service-impl/service-impl.iml" filepath="$PROJECT_DIR$/services/service-impl/service-impl.iml" />
