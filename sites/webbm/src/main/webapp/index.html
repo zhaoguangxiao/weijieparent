@@ -1,10 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-hello word
+<meta charset="utf-8" />   
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<link type="text/css" href="css/index.css" rel="stylesheet" />
+<link href="/page/zywpc/images/favicon.ico" rel="shortcut icon" >
+<title>粥员外</title>
+<body> 
+<div class="zhou">
+<ul>
+<li><img src="img/friedchicken_01.png" alt=""></li>
+<li><img src="img/feature_02.png" alt=""></li>
+<li><img src="img/delicious_03.png" alt=""></li>
+<li><img src="img/product_04.png" alt=""></li>
+<li><img src="img/alltime_05.png" alt=""></li>
+<li><img src="img/popular_06.png" alt=""></li>
+<li><img src="img/hold_07.png" alt=""></li>
+<li><img src="img/ormula_08.png" alt=""></li>
+<li><img src="img/solve_09.png" alt=""></li>
+<li><img src="img/groupphoto_10.png" alt=""></li>
+<div style="float:left; width:100%; font-size:16px; line-height:50px; text-align:center;">版权所有：杭州味捷餐饮有限公司</div>
+<em></em>
+
+</ul>
+</div>
+
+<div class="fytg">
+	<div class="center2">
+    	<div class="fytg1"><img src="img/b1.png"></div>
+        <div class="fytg2">
+		<form action="/contact/apply.html" id="applyform">
+        	<h1><img src="img/b2.png"></h1>
+        	<h2><a href="javascript:;" onclick="$('#applyform').submit();">提  交</a></h2>
+            <ul>
+            	<li><input placeholder="您的称呼" name="name" type="text" class="syk Validform_error" datatype="*" errormsg="请输入您的姓名" nullmsg="请输入您的姓名"></li>
+                <li><input placeholder="手机号码" name="mobile" type="text" class="syk Validform_error" datatype="m" errormsg="手机号码格式有误" nullmsg="请输入您的手机"></li>
+                <li><input placeholder="加盟区域" name="content" type="text" class="syk Validform_error" datatype="*" errormsg="请输入您的加盟区域" nullmsg="请输入您的加盟区域"></li>
+            </ul>
+            <input type="hidden" name="type" value="zywpc">
+		</form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script>
+    $("#applyform").Validform({
+        showAllError:false,
+        tiptype:function(msg,o,cssctl){
+            if(o.type == 3) {
+                layer.msg(msg);
+            }
+        },
+        ajaxPost:true,
+        ajaxpost:{
+            url:$('#applyform').attr('action'),
+            timeout:1000,
+            success:function(data,obj){
+                    layer.msg(data.info);
+                    if(data.status) {
+                        $('#applyform')[0].reset();
+						location.href="/page/zywyd/msg.html";
+                    }
+            },
+            error:function(data,obj){
+            }
+        },
+    });
+
+</script>
+<script> 
+new WOW().init();
+</script>
+
+<script type="text/javascript">
+var speed=50 
+marquePic2.innerHTML=marquePic1.innerHTML 
+function Marquee(){ 
+if(zywgd.scrollLeft>=marquePic1.scrollWidth){ 
+zywgd.scrollLeft=0 
+}else{ 
+zywgd.scrollLeft++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+zywgd.onmouseover=function() {clearInterval(MyMar)} 
+zywgd.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7e7587a50c0a0db550c227c5ee406365";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script language="javascript" src="js/lsjs.js"></script>
 </body>
 </html>
