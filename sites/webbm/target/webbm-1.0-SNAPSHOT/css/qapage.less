@@ -1,0 +1,486 @@
+/* 筛选 start */
+.screen-box {
+  background-color: #f6f8f9;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  .screen {
+    //height: 150px;
+    background-color: #fff;
+    padding-top: 51px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    height: 16px;
+    p{
+      display: inline-block;
+      float: left;
+      color: #4f646a;
+      font-size: 16px;
+      line-height: 16px;
+    }
+    li {
+      float: left;
+      font-size: 16px;
+      color: #4f646a;
+      margin-left: 30px;
+      line-height: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .crowd {
+    li {
+
+    }
+  }
+
+  .budget {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .choice {
+    padding-left: 80px;
+  }
+
+  .screen-active {
+    color: #ff1734;
+  }
+}
+
+/* 筛选 end */
+
+
+/* 正文开始 */
+main {
+  background-color: #fff;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 212px;
+  }
+
+  .m-left {
+    flex: 0 0 874px;
+    /* 问题表单 */
+
+    .ml-tab {
+      border-bottom: 2px solid #f1f1f1;
+      padding-bottom: 6px;
+
+      li {
+        float: left;
+        font-size: 18px;
+        color: #4f646a;
+        margin-left: 22px;
+        height: 32px;
+        position: relative;
+        cursor: pointer;
+        line-height: 37px;
+
+        &.mlt-active {
+          color: #1e2629;
+          font-size: 22px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            background-color: #e8332f;
+            width: 87px;
+            height: 4px;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+
+    .ml-item {
+      ul {
+        padding-top: 21px;
+
+        li {
+          height: 189px;
+          width: 100%;
+          //background-color: pink;
+          margin-bottom: 28px;
+          padding-top: 21px;
+          border-bottom: 1px solid #f1f1f1;
+
+          a {
+            width: 100%;
+            height: 141px;
+            padding-top: 21px;
+            padding-left: 23px;
+            padding-right: 34px;
+            position: relative;
+            background-color: #fff;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+              flex: 0 0 103px;
+              height: 103px;
+            }
+
+            .news_text {
+              flex: 0 0 686px;
+              //background-color: #8bb1ff;
+              h2 {
+                font-size: 18px;
+                color: #ff1734;
+              }
+
+              p {
+                font-size: 14px;
+                color: #4f646a;
+                margin-top: 12px;
+                margin-bottom: 10px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                width: 686px;
+              }
+
+              div {
+                span {
+                  &:nth-of-type(1) {
+                    color: #4f646a;
+                    font-size: 12px;
+                  }
+
+                  &:nth-of-type(2) {
+                    font-size: 12px;
+                    color: #1e2629;
+
+                    em {
+                      i {
+                        font-style: normal;
+                      }
+
+                      &:nth-of-type(1) {
+                        margin-right: 32px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover {
+              //&:before {
+              //  content: "";
+              //  position: absolute;
+              //  width: 874px;
+              //  height: 162px;
+              //  background: url("../images/qapage/hover_back.png") no-repeat center center;
+              //  background-size: cover;
+              //  left: 0;
+              //  top: 0;
+              //  z-index: -1;
+              //}
+              box-shadow: 0 2px 5px #e85b39;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .m-right {
+    flex: 0 0 306px;
+
+    .mr-recommend {
+      width: 100%;
+      //height: 595px;
+      border-width: 4px 1px 1px 1px;
+      border-color: #f32222 #c2d1d2 #c2d1d2 #c2d1d2;
+      border-style: solid;
+      background: #fff;
+      padding: 15px;
+
+      .mrr-title {
+        height: 33px;
+        margin-bottom: 15px;
+        background: url("../images/problem/recommend_title_img.png") no-repeat center center;
+        background-size: contain;
+      }
+
+      ul {
+        width: 100%;
+        //background: pink;
+        border-top: 1px solid #eaeaea;
+
+        li {
+          height: 125px;
+
+          a {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid #eaeaea;
+            justify-content: space-between;
+
+            img {
+              flex: 0 0 113px;
+              height: 87px;
+              display: block;
+              margin-top: 21px;
+              transition: transform .2s ease-in-out .1s;
+            }
+
+            > div {
+              padding-top: 31px;
+
+              p {
+                &:nth-of-type(1) {
+                  font-size: 16px;
+                  transition: transform .2s ease-in-out .1s;
+                }
+
+                &:nth-of-type(2) {
+                  font-size: 14px;
+                  margin-top: 6px;
+                  margin-bottom: 6px;
+
+                  i {
+                    color: #ff722a;
+                    font-style: normal;
+                  }
+                }
+
+                &:nth-of-type(3) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            a {
+              img {
+                transform: translateX(-2px);
+              }
+            }
+
+            p {
+              &:nth-of-type(1) {
+                color: #ff0b0f;
+                transform: translateX(3px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .huan {
+      display: block;
+      color: #ff0b0f;
+      font-size: 12px;
+      margin-top: 15px;
+      text-align: center;
+
+      img {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-backface-visibility: hidden;
+      }
+
+      i {
+        font-style: normal;
+        margin-left: 4px;
+      }
+
+      .runanimation {
+        animation: run360 1.5s linear infinite;
+      }
+    }
+
+    @keyframes run360 {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .mr-news {
+      width: 100%;
+      border: 1px solid #c2d1d2;
+      background: #fff;
+      margin-top: 21px;
+      padding: 7px 6px 28px 6px;
+
+      .mrn-title {
+        height: 68px;
+
+        background: url("../images/problem/news_title.png") no-repeat center center;
+        background-size: contain;
+      }
+
+      ul {
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 18px;
+
+        li {
+          width: 260px;
+          font-size: 16px;
+          color: #4f646a;
+          overflow: hidden; /*超出部分隐藏*/
+          white-space: nowrap; /*不换行*/
+          text-overflow: ellipsis; /*超出部分文字以...显示*/
+          position: relative;
+          margin-bottom: 10px;
+
+          &:nth-child(-n+3) {
+            &:before {
+              background-color: #f32222;
+            }
+          }
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #4f646a;
+          }
+
+          a {
+            padding-left: 15px;
+
+            &:hover {
+              color: #f32222;
+            }
+          }
+        }
+      }
+    }
+
+    /* 热门标签 */
+
+    .mr-hotlabel {
+      width: 306px;
+      padding-bottom: 20px;
+      //background-color: pink;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border-width: 4px 1px 1px 1px;
+      border-style: solid;
+      border-color: #e71f19 #c2d1d2 #c2d1d2 #c2d1d2;
+
+      .mrh-title {
+        margin-top: 23px;
+        margin-bottom: 11px;
+        height: 33px;
+        background: url("../images/qapage/hot_title_img.png") no-repeat center center;
+        background-size: contain;
+      }
+
+      .label-nav {
+        width: 276px;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        margin: 0 auto;
+        padding-top: 16px;
+        padding-bottom: 21px;
+
+        li {
+          float: left;
+          padding-left: 12px;
+          padding-right: 12px;
+          background: #fff;
+          border-radius: 12px;
+          border: solid 1px #c2d1d2;
+          line-height: 25px;
+          text-align: center;
+          margin-right: 12px;
+          margin-bottom: 15px;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #4f646a;
+          }
+
+          &:hover {
+            border: solid 1px #ff1734;
+            background-color: #ff0e15;
+
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    /* 精选问答 */
+
+    .selectedqa {
+      padding-top: 23px;
+      padding-left: 17px;
+      padding-right: 13px;
+      width: 306px;
+      padding-bottom: 20px;
+      //background-color: pink;
+      margin-top: 30px;
+      border-width: 4px 1px 1px 1px;
+      border-style: solid;
+      border-color: #e71f19 #c2d1d2 #c2d1d2 #c2d1d2;
+      /* 标题 */
+
+      .selqa-title {
+        height: 33px;
+        background: url("../images/qapage/qa_title_img.png") no-repeat center center;
+        background-size: contain;
+        margin-bottom: 12px;
+      }
+
+      .sel-nav {
+        border-top: 1px solid #eaeaea;
+        padding-top: 25px;
+        padding-left: 8px;
+        padding-right: 4px;
+
+        li {
+
+          margin-bottom: 10px;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 16px;
+            color: #4f646a;
+            &:hover{
+              color: #e71f19;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 正文结束 */

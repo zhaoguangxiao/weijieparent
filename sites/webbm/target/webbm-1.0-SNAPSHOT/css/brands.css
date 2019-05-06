@@ -1,0 +1,272 @@
+/*
+
+    精选品牌
+
+
+*/
+/* 上部三格子 */
+nav {
+  margin-top: 10px;
+  height: 310px;
+  background-color: #fff;
+}
+nav .nav-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 41px;
+}
+nav .nav-content .nav-left {
+  flex: 0 0 151px;
+  height: 100%;
+  border: 1px solid #eaeaea;
+}
+nav .nav-content .nav-left .mid-title {
+  padding-top: 12px;
+}
+nav .nav-content .nav-left .mid-title p {
+  text-align: center;
+}
+nav .nav-content .nav-left .mid-title p:nth-of-type(1) {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+nav .nav-content .nav-left .mid-title p:nth-of-type(2) {
+  font-size: 10px;
+  color: #c1c1c1;
+  line-height: 10px;
+}
+nav .nav-content .nav-left .mid-title .mid-nav {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li {
+  height: 35px;
+  border-bottom: 1px solid #eaeaea;
+  line-height: 35px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:hover {
+  transform: translateX(-5px);
+}
+nav .nav-content .nav-left .mid-title .mid-nav li span:nth-of-type(1) {
+  background: url("../images/index/slid_04.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li span:nth-of-type(1) {
+  display: inline-block;
+  font-style: normal;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li span:nth-of-type(2) {
+  font-size: 14px;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li span:nth-of-type(3) {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 13px;
+  height: 15px;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:nth-of-type(1) span:nth-of-type(1) {
+  background: url("../images/index/slid_01.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:nth-of-type(1) span:nth-of-type(3) {
+  background: url("../images/index/hot_01.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:nth-of-type(2) span:nth-of-type(1) {
+  background: url("../images/index/slid_02.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:nth-of-type(2) span:nth-of-type(3) {
+  background: url("../images/index/hot_02.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:nth-of-type(3) span:nth-of-type(1) {
+  background: url("../images/index/slid_03.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:nth-of-type(3) span:nth-of-type(3) {
+  background: url("../images/index/hot_03.png") no-repeat center center;
+  background-size: contain;
+}
+nav .nav-content .nav-left .mid-title .mid-nav li:last-child {
+  border-bottom: none;
+}
+nav .nav-content .nav-mid {
+  flex: 0 0 838px;
+  height: 100%;
+  background-color: #ffde99;
+}
+nav .nav-content .nav-mid .swiper-container {
+  width: 838px;
+  /* 轮播点的样式设置 */
+}
+nav .nav-content .nav-mid .swiper-container a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+nav .nav-content .nav-mid .swiper-container a img {
+  width: 100%;
+  display: block;
+}
+nav .nav-content .nav-mid .swiper-container .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+nav .nav-content .nav-mid .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 25px;
+  border-radius: 4px;
+}
+nav .nav-content .nav-mid .swiper-container .swiper-button-prev,
+nav .nav-content .nav-mid .swiper-container .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 50%;
+  background-size: 7px 44px;
+}
+nav .nav-content .nav-right {
+  flex: 0 0 184px;
+  height: 100%;
+  background-color: #ffad46;
+}
+nav .nav-content .nav-right a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+nav .nav-content .nav-right a img {
+  display: block;
+  width: 100%;
+}
+/* 主体 */
+main {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 72px;
+  /* 标题 */
+  /* 品牌盒子 */
+}
+main .brand-title {
+  height: 32px;
+  background: url("../images/brands/title_img.png") no-repeat center center;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+main .brand-box .bb-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+main .brand-box .bb-nav li {
+  flex: 0 0 278px;
+  height: 395px;
+  margin-bottom: 75px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .brand-box .bb-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .brand-box .bb-nav li a .popup {
+  width: 224px;
+  height: 294px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 274px;
+  transition: all 0.5s ease-in-out 0.1s;
+  text-align: center;
+  padding: 50px 0;
+}
+main .brand-box .bb-nav li a .popup img {
+  vertical-align: middle;
+  margin-bottom: 25px;
+}
+main .brand-box .bb-nav li a .popup p:nth-of-type(1) {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+main .brand-box .bb-nav li a .popup p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 17px;
+}
+main .brand-box .bb-nav li a .popup p:nth-of-type(3) {
+  font-size: 14px;
+  line-height: 17px;
+}
+main .brand-box .bb-nav li a .popup input[type="button"] {
+  cursor: pointer;
+  margin-top: 37px;
+  border: none;
+  width: 98px;
+  height: 25px;
+  background-color: #fe2929;
+  border-radius: 12px;
+  line-height: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-family: PingFangSC-;
+}
+main .brand-box .bb-nav li:hover a .popup {
+  top: 63px !important;
+  background-color: #fff !important;
+  box-shadow: -7px -2px 9px 1px rgba(144, 11, 11, 0.28);
+}
+main .brand-box .bb-nav li:nth-of-type(1) {
+  background: url("../images/brands/b01.png") no-repeat center center;
+  background-size: contain;
+}
+main .brand-box .bb-nav li:nth-of-type(2) {
+  background-image: url("../images/brands/b02.png");
+}
+main .brand-box .bb-nav li:nth-of-type(3) {
+  background-image: url("../images/brands/b03.png");
+}
+main .brand-box .bb-nav li:nth-of-type(4) {
+  background-image: url("../images/brands/b04.png");
+}
+main .brand-box .bb-nav li:nth-of-type(5) {
+  background-image: url("../images/brands/b05.png");
+}
+main .brand-box .bb-nav li:nth-of-type(6) {
+  background-image: url("../images/brands/b06.png");
+}
+main .brand-box .bb-nav li:nth-of-type(7) {
+  background-image: url("../images/brands/b07.png");
+}
+main .brand-box .bb-nav li:nth-of-type(8) {
+  background-image: url("../images/brands/b08.png");
+}
+main .brand-box .bb-nav li:nth-of-type(9) {
+  background-image: url("../images/brands/b09.png");
+}
+main .brand-box .bb-nav li:nth-of-type(10) {
+  background-image: url("../images/brands/b10.png");
+}
+main .brand-box .bb-nav li:nth-of-type(11) {
+  background-image: url("../images/brands/b11.png");
+}
+main .brand-box .bb-nav li:nth-of-type(12) {
+  background-image: url("../images/brands/b12.png");
+}
+/*# sourceMappingURL=brands.css.map */

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.weijie.dao.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.weijie.pojo.User" >
+        <id column="b_id" property="bid" jdbcType="BIGINT" />
+        <result column="b_name" property="bName" jdbcType="VARCHAR" />
+        <result column="b_fir" property="bFir" jdbcType="VARCHAR" />
+        <result column="b_tfn" property="bTfn" jdbcType="BIGINT" />
+        <result column="b_pwd" property="bPwd" jdbcType="VARCHAR" />
+    </resultMap>
+   <sql id="BaseUser">b_id,b_name,b_fir,b_tfn,b_pwd</sql>
+
+
+    <select id="getKey" resultMap="BaseResultMap">
+        SELECT <include refid="BaseUser"/> FROM user
+    </select>
+</mapper>

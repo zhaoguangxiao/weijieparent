@@ -1,0 +1,372 @@
+/*
+
+    精选品牌
+
+
+*/
+/* 上部三格子 */
+nav {
+  margin-top: 10px;
+  height: 310px;
+  background-color: #fff;
+
+
+  .nav-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 41px;
+
+    .nav-left {
+      flex: 0 0 151px;
+      height: 100%;
+      border: 1px solid #eaeaea;
+
+      .mid-title {
+        padding-top: 12px;
+
+        p {
+          text-align: center;
+
+          &:nth-of-type(1) {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            line-height: 18px;
+            margin-bottom: 2px;
+          }
+
+          &:nth-of-type(2) {
+            font-size: 10px;
+            color: #c1c1c1;
+            line-height: 10px;
+          }
+        }
+
+        .mid-nav {
+          text-align: center;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-top: 10px;
+
+          li {
+            height: 35px;
+            border-bottom: 1px solid #eaeaea;
+            line-height: 35px;
+            cursor: pointer;
+            transition: transform 0.1s;
+
+            &:hover {
+              transform: translateX(-5px);
+            }
+
+            span {
+              &:nth-of-type(1) {
+
+                background: url("../images/index/slid_04.png") no-repeat center center;
+                background-size: contain;
+              }
+
+            }
+
+            span {
+              &:nth-of-type(1) {
+                display: inline-block;
+                font-style: normal;
+                width: 15px;
+                height: 15px;
+                font-size: 12px;
+                color: #fff;
+                line-height: 15px;
+                text-align: center;
+              }
+
+              &:nth-of-type(2) {
+                font-size: 14px;
+              }
+
+              &:nth-of-type(3) {
+                display: inline-block;
+                vertical-align: text-top;
+                width: 13px;
+                height: 15px;
+              }
+            }
+
+            &:nth-of-type(1) {
+              span {
+                &:nth-of-type(1) {
+
+                  background: url("../images/index/slid_01.png") no-repeat center center;
+                  background-size: contain;
+
+                }
+
+
+                &:nth-of-type(3) {
+
+                  background: url("../images/index/hot_01.png") no-repeat center center;
+                  background-size: contain;
+                }
+              }
+            }
+
+            &:nth-of-type(2) {
+              span {
+                &:nth-of-type(1) {
+
+                  background: url("../images/index/slid_02.png") no-repeat center center;
+                  background-size: contain;
+
+                }
+
+
+                &:nth-of-type(3) {
+
+                  background: url("../images/index/hot_02.png") no-repeat center center;
+                  background-size: contain;
+                }
+              }
+            }
+
+            &:nth-of-type(3) {
+              span {
+                &:nth-of-type(1) {
+
+                  background: url("../images/index/slid_03.png") no-repeat center center;
+                  background-size: contain;
+
+                }
+
+
+                &:nth-of-type(3) {
+
+                  background: url("../images/index/hot_03.png") no-repeat center center;
+                  background-size: contain;
+                }
+              }
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-mid {
+      flex: 0 0 838px;
+      height: 100%;
+      background-color: #ffde99;
+
+      .swiper-container {
+        width: 838px;
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+
+          img {
+
+            width: 100%;
+            display: block;
+          }
+        }
+
+        /* 轮播点的样式设置 */
+
+        .swiper-pagination-bullet {
+          background-color: #fff;
+          opacity: 1;
+
+          &.swiper-pagination-bullet-active {
+            width: 25px;
+            border-radius: 4px;
+          }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: 30px !important;
+          height: 30px !important;
+          background-color: rgba(0, 0, 0, .2) !important;
+          border-radius: 50%;
+          background-size: 7px 44px;
+        }
+      }
+    }
+
+    .nav-right {
+      flex: 0 0 184px;
+      height: 100%;
+      background-color: #ffad46;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* 主体 */
+main {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 72px;
+  /* 标题 */
+
+  .brand-title {
+    height: 32px;
+    background: url("../images/brands/title_img.png") no-repeat center center;
+    background-size: contain;
+    margin-bottom: 40px;
+  }
+
+  /* 品牌盒子 */
+
+  .brand-box {
+    .bb-nav {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+
+      li {
+        flex: 0 0 278px;
+        height: 395px;
+        //background-color: pink;
+        margin-bottom: 75px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+
+          .popup {
+            width: 224px;
+            height: 294px;
+            background-color: rgba(255, 255, 255, .9);
+            border-radius: 10px;
+            position: absolute;
+            //top: 63px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 274px;
+            transition: all .5s ease-in-out .1s;
+            text-align: center;
+            padding: 50px 0;
+
+            img {
+              vertical-align: middle;
+              margin-bottom: 25px;
+            }
+
+            p {
+              &:nth-of-type(1) {
+                font-size: 20px;
+                margin-bottom: 24px;
+              }
+
+              &:nth-of-type(2) {
+                font-size: 14px;
+                line-height: 17px;
+              }
+
+              &:nth-of-type(3) {
+                font-size: 14px;
+                line-height: 17px;
+              }
+            }
+
+            input[type="button"] {
+              cursor: pointer;
+              margin-top: 37px;
+              border: none;
+              width: 98px;
+              height: 25px;
+              background-color: #fe2929;
+              border-radius: 12px;
+              line-height: 25px;
+              color: #fff;
+              font-size: 14px;
+              font-family: PingFangSC-;
+            }
+          }
+        }
+
+        &:hover {
+          //  &::after {
+          //    content: "";
+          //    position: absolute;
+          //    left: 0;
+          //    right: 0;
+          //    top: 0;
+          //    bottom: 0;
+          //    width: 278px;
+          //    height: 395px;
+          //    background: rgba(255, 255, 255, 0.3);
+          //  }
+          a {
+            .popup {
+              top: 63px !important;
+              background-color: #fff !important;
+              box-shadow: -7px -2px 9px 1px rgba(144, 11, 11, 0.28);
+            }
+          }
+        }
+
+
+        &:nth-of-type(1) {
+          background: url("../images/brands/b01.png") no-repeat center center;
+          background-size: contain;
+        }
+
+        &:nth-of-type(2) {
+          background-image: url("../images/brands/b02.png");
+        }
+        &:nth-of-type(3) {
+          background-image: url("../images/brands/b03.png");
+        }
+        &:nth-of-type(4) {
+          background-image: url("../images/brands/b04.png");
+        }
+        &:nth-of-type(5) {
+          background-image: url("../images/brands/b05.png");
+        }
+        &:nth-of-type(6) {
+          background-image: url("../images/brands/b06.png");
+        }
+        &:nth-of-type(7) {
+          background-image: url("../images/brands/b07.png");
+        }
+        &:nth-of-type(8) {
+          background-image: url("../images/brands/b08.png");
+        }
+        &:nth-of-type(9) {
+          background-image: url("../images/brands/b09.png");
+        }
+        &:nth-of-type(10) {
+          background-image: url("../images/brands/b10.png");
+        }
+        &:nth-of-type(11) {
+          background-image: url("../images/brands/b11.png");
+        }
+        &:nth-of-type(12) {
+          background-image: url("../images/brands/b12.png");
+        }
+
+      }
+    }
+  }
+}

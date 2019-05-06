@@ -1,0 +1,379 @@
+/* 筛选 start */
+.screen-box {
+  background-color: #f6f8f9;
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+.screen-box .screen {
+  background-color: #fff;
+  padding-top: 51px;
+  padding-left: 24px;
+  padding-bottom: 10px;
+}
+.screen-box ul {
+  height: 16px;
+}
+.screen-box ul p {
+  display: inline-block;
+  float: left;
+  color: #4f646a;
+  font-size: 16px;
+  line-height: 16px;
+}
+.screen-box ul li {
+  float: left;
+  font-size: 16px;
+  color: #4f646a;
+  margin-left: 30px;
+  line-height: 16px;
+  cursor: pointer;
+}
+.screen-box .budget {
+  margin-top: 31px;
+  margin-bottom: 31px;
+}
+.screen-box .choice {
+  padding-left: 80px;
+}
+.screen-box .screen-active {
+  color: #ff1734;
+}
+/* 筛选 end */
+/* 正文开始 */
+main {
+  background-color: #fff;
+}
+main > div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 212px;
+}
+main .m-left {
+  flex: 0 0 874px;
+  /* 问题表单 */
+}
+main .m-left .ml-tab {
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 6px;
+}
+main .m-left .ml-tab li {
+  float: left;
+  font-size: 18px;
+  color: #4f646a;
+  margin-left: 22px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  line-height: 37px;
+}
+main .m-left .ml-tab li.mlt-active {
+  color: #1e2629;
+  font-size: 22px;
+}
+main .m-left .ml-tab li.mlt-active::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  background-color: #e8332f;
+  width: 87px;
+  height: 4px;
+  border-radius: 2px;
+}
+main .m-left .ml-item ul {
+  padding-top: 21px;
+}
+main .m-left .ml-item ul li {
+  height: 189px;
+  width: 100%;
+  margin-bottom: 28px;
+  padding-top: 21px;
+  border-bottom: 1px solid #f1f1f1;
+}
+main .m-left .ml-item ul li a {
+  width: 100%;
+  height: 141px;
+  padding-top: 21px;
+  padding-left: 23px;
+  padding-right: 34px;
+  position: relative;
+  background-color: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+main .m-left .ml-item ul li a img {
+  flex: 0 0 103px;
+  height: 103px;
+}
+main .m-left .ml-item ul li a .news_text {
+  flex: 0 0 686px;
+}
+main .m-left .ml-item ul li a .news_text h2 {
+  font-size: 18px;
+  color: #ff1734;
+}
+main .m-left .ml-item ul li a .news_text p {
+  font-size: 14px;
+  color: #4f646a;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  width: 686px;
+}
+main .m-left .ml-item ul li a .news_text div span:nth-of-type(1) {
+  color: #4f646a;
+  font-size: 12px;
+}
+main .m-left .ml-item ul li a .news_text div span:nth-of-type(2) {
+  font-size: 12px;
+  color: #1e2629;
+}
+main .m-left .ml-item ul li a .news_text div span:nth-of-type(2) em i {
+  font-style: normal;
+}
+main .m-left .ml-item ul li a .news_text div span:nth-of-type(2) em:nth-of-type(1) {
+  margin-right: 32px;
+}
+main .m-left .ml-item ul li a:hover {
+  box-shadow: 0 2px 5px #e85b39;
+}
+main .m-right {
+  flex: 0 0 306px;
+  /* 热门标签 */
+  /* 精选问答 */
+}
+main .m-right .mr-recommend {
+  width: 100%;
+  border-width: 4px 1px 1px 1px;
+  border-color: #f32222 #c2d1d2 #c2d1d2 #c2d1d2;
+  border-style: solid;
+  background: #fff;
+  padding: 15px;
+}
+main .m-right .mr-recommend .mrr-title {
+  height: 33px;
+  margin-bottom: 15px;
+  background: url("../images/problem/recommend_title_img.png") no-repeat center center;
+  background-size: contain;
+}
+main .m-right .mr-recommend ul {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+}
+main .m-right .mr-recommend ul li {
+  height: 125px;
+}
+main .m-right .mr-recommend ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: space-between;
+}
+main .m-right .mr-recommend ul li a img {
+  flex: 0 0 113px;
+  height: 87px;
+  display: block;
+  margin-top: 21px;
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+main .m-right .mr-recommend ul li a > div {
+  padding-top: 31px;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(1) {
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(2) {
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(2) i {
+  color: #ff722a;
+  font-style: normal;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(3) {
+  font-size: 14px;
+}
+main .m-right .mr-recommend ul li:hover a img {
+  transform: translateX(-2px);
+}
+main .m-right .mr-recommend ul li:hover p:nth-of-type(1) {
+  color: #ff0b0f;
+  transform: translateX(3px);
+}
+main .m-right .huan {
+  display: block;
+  color: #ff0b0f;
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+main .m-right .huan img {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+}
+main .m-right .huan i {
+  font-style: normal;
+  margin-left: 4px;
+}
+main .m-right .huan .runanimation {
+  animation: run360 1.5s linear infinite;
+}
+@keyframes run360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .m-right .mr-news {
+  width: 100%;
+  border: 1px solid #c2d1d2;
+  background: #fff;
+  margin-top: 21px;
+  padding: 7px 6px 28px 6px;
+}
+main .m-right .mr-news .mrn-title {
+  height: 68px;
+  background: url("../images/problem/news_title.png") no-repeat center center;
+  background-size: contain;
+}
+main .m-right .mr-news ul {
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 18px;
+}
+main .m-right .mr-news ul li {
+  width: 260px;
+  font-size: 16px;
+  color: #4f646a;
+  overflow: hidden;
+  /*超出部分隐藏*/
+  white-space: nowrap;
+  /*不换行*/
+  text-overflow: ellipsis;
+  /*超出部分文字以...显示*/
+  position: relative;
+  margin-bottom: 10px;
+}
+main .m-right .mr-news ul li:nth-child(-n+3):before {
+  background-color: #f32222;
+}
+main .m-right .mr-news ul li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #4f646a;
+}
+main .m-right .mr-news ul li a {
+  padding-left: 15px;
+}
+main .m-right .mr-news ul li a:hover {
+  color: #f32222;
+}
+main .m-right .mr-hotlabel {
+  width: 306px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-width: 4px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e71f19 #c2d1d2 #c2d1d2 #c2d1d2;
+}
+main .m-right .mr-hotlabel .mrh-title {
+  margin-top: 23px;
+  margin-bottom: 11px;
+  height: 33px;
+  background: url("../images/qapage/hot_title_img.png") no-repeat center center;
+  background-size: contain;
+}
+main .m-right .mr-hotlabel .label-nav {
+  width: 276px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 21px;
+}
+main .m-right .mr-hotlabel .label-nav li {
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #fff;
+  border-radius: 12px;
+  border: solid 1px #c2d1d2;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 12px;
+  margin-bottom: 15px;
+}
+main .m-right .mr-hotlabel .label-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #4f646a;
+}
+main .m-right .mr-hotlabel .label-nav li:hover {
+  border: solid 1px #ff1734;
+  background-color: #ff0e15;
+}
+main .m-right .mr-hotlabel .label-nav li:hover a {
+  color: #fff;
+}
+main .m-right .selectedqa {
+  padding-top: 23px;
+  padding-left: 17px;
+  padding-right: 13px;
+  width: 306px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  border-width: 4px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e71f19 #c2d1d2 #c2d1d2 #c2d1d2;
+  /* 标题 */
+}
+main .m-right .selectedqa .selqa-title {
+  height: 33px;
+  background: url("../images/qapage/qa_title_img.png") no-repeat center center;
+  background-size: contain;
+  margin-bottom: 12px;
+}
+main .m-right .selectedqa .sel-nav {
+  border-top: 1px solid #eaeaea;
+  padding-top: 25px;
+  padding-left: 8px;
+  padding-right: 4px;
+}
+main .m-right .selectedqa .sel-nav li {
+  margin-bottom: 10px;
+}
+main .m-right .selectedqa .sel-nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  color: #4f646a;
+}
+main .m-right .selectedqa .sel-nav li a:hover {
+  color: #e71f19;
+}
+/* 正文结束 */
+/*# sourceMappingURL=qapage.css.map */
