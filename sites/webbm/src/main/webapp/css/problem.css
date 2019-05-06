@@ -1,0 +1,627 @@
+/*
+
+    提问
+
+
+ */
+#swiper-container1 {
+  width: 100%;
+  height: 40px;
+  background-color: #f32222;
+  margin-top: 1px;
+}
+/* 面包屑开始 */
+.bread {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+.bread a {
+  font-size: 12px;
+  color: #4f646a;
+}
+.bread a:nth-of-type(1) i {
+  font-size: 12px;
+  color: #4f646a;
+  margin-right: 4px;
+}
+.bread a:hover {
+  color: #f32222;
+}
+.bread a:hover i {
+  color: #f32222;
+}
+.bread span {
+  color: #4f646a;
+  font-size: 12px;
+}
+/* 面包屑结束 */
+/* 顶部图片开始 */
+.top_img {
+  width: 1203px;
+  height: 100px;
+  margin: 0 auto 44px auto;
+}
+.top_img a {
+  width: 1203px;
+  height: 100px;
+  display: block;
+}
+.top_img a img {
+  width: 100%;
+  display: block;
+}
+/* 顶部图片结束 */
+/* 正文开始 */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 212px;
+}
+main .m-left {
+  flex: 0 0 874px;
+  /* 问题表单 */
+  /* 用户信息 */
+}
+main .m-left .ml-pro {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 10px 10px 27px 10px;
+  /* 提问题 */
+  /* 热门问题 */
+}
+main .m-left .ml-pro form {
+  position: relative;
+}
+main .m-left .ml-pro form input[type="text"] {
+  width: 100%;
+  height: 39px;
+  font-family: PingFangSC-, sans-serif;
+  background-color: #ffffff;
+  border: solid 1px #ff1734;
+  padding-left: 16px;
+  font-size: 16px;
+}
+main .m-left .ml-pro form input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px inset #ff3434;
+}
+main .m-left .ml-pro form .filebox {
+  width: 850px;
+  height: 150px;
+  border: 1px solid #eaeaea;
+  position: relative;
+  padding-top: 12px;
+  padding-left: 17px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+main .m-left .ml-pro form .filebox input[type="file"] {
+  opacity: 0;
+}
+main .m-left .ml-pro form .filebox .sure_file {
+  font-family: PingFangSC-, sans-serif;
+  font-size: 16px;
+  color: #8aa0a6 !important;
+}
+main .m-left .ml-pro form .filebox .cbox {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .m-left .ml-pro form .filebox .cbox img {
+  width: 70%;
+  height: 100%;
+  display: block;
+}
+main .m-left .ml-pro form .bot-box {
+  width: 156px;
+  margin-top: 21px;
+  float: right;
+}
+main .m-left .ml-pro form .bot-box .bot {
+  display: inline-block;
+  top: 217px;
+  right: 130px;
+}
+main .m-left .ml-pro form .bot-box .bot input[type="checkbox"] {
+  vertical-align: middle;
+  display: inline-block;
+}
+main .m-left .ml-pro form .bot-box .bot .nm-cls {
+  margin-left: 3px;
+  font-size: 14px;
+  color: #8aa0a6;
+  vertical-align: middle;
+}
+main .m-left .ml-pro form .bot-box input[type="submit"] {
+  cursor: pointer;
+  width: 81px;
+  height: 24px;
+  background-color: #e8332f;
+  border-radius: 5px;
+  border: none !important;
+  color: #fff;
+  font-family: PingFangSC-, sans-serif;
+  top: 215px;
+  right: 15px;
+  margin-left: 20px;
+}
+main .m-left .ml-pro .hot-problem {
+  width: 831px;
+  border-top: 1px solid #c4d3d4;
+  border-bottom: 1px solid #c4d3d4;
+  margin-top: 69px;
+  position: relative;
+  padding-top: 35px;
+  padding-left: 23px;
+}
+main .m-left .ml-pro .hot-problem .hp-title {
+  position: absolute;
+  width: 89px;
+  height: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #4f646a;
+  top: -11px;
+  z-index: 123;
+  left: 0;
+  background-color: #fff;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li {
+  margin-bottom: 17px;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li a {
+  font-size: 14px;
+  color: #4f646a;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li a span {
+  font-size: 14px;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li a span:nth-of-type(1) {
+  margin-right: 32px;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li a span:nth-of-type(3) {
+  float: right;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li a span:nth-of-type(3) i {
+  font-style: normal;
+}
+main .m-left .ml-pro .hot-problem .hp-nav li a:hover span:nth-of-type(2) {
+  color: #f51630;
+}
+main .m-left .ml-form {
+  width: 100%;
+  padding-bottom: 51px;
+  background-color: #fff;
+  border: 1px solid #ff0101;
+  margin-top: 33px;
+  position: relative;
+  /* 顶部图片 */
+  /*  */
+}
+main .m-left .ml-form .service a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .m-left .ml-form .service a img {
+  display: block;
+  width: 100%;
+}
+main .m-left .ml-form h2 {
+  padding-top: 34px;
+  padding-left: 43px;
+  font-size: 16px;
+  color: #1e2629;
+}
+main .m-left .ml-form h2 i {
+  font-style: normal;
+  font-size: 12px;
+}
+main .m-left .ml-form form {
+  padding-left: 48px;
+  margin-top: 19px;
+  /* 提示信息 */
+}
+main .m-left .ml-form form label {
+  font-size: 14px;
+}
+main .m-left .ml-form form label i {
+  color: #f51530;
+  margin-right: 3px;
+}
+main .m-left .ml-form form input:not(.rad) {
+  padding-left: 5px;
+  width: 179px;
+  height: 30px;
+  font-family: PingFangSC-, sans-serif;
+  color: #333;
+}
+main .m-left .ml-form form input[type="radio"] {
+  font-size: 14px;
+}
+main .m-left .ml-form form .radiobox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .m-left .ml-form form .radiobox .rad {
+  vertical-align: middle;
+}
+main .m-left .ml-form form .radiobox #lady {
+  margin-left: 17px;
+}
+main .m-left .ml-form form .address-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .m-left .ml-form form .address-box .useraddress-lab {
+  padding-left: 11px;
+}
+main .m-left .ml-form form .usermsg-lab {
+  display: inline-block;
+  padding-left: 11px;
+  vertical-align: top;
+  padding-top: 5px;
+}
+main .m-left .ml-form form #usermsg {
+  vertical-align: middle;
+  padding: 5px;
+  font-size: 14px;
+  font-family: PingFangSC-, sans-serif;
+  max-width: 179px;
+  min-width: 179px;
+  max-height: 230px;
+  min-height: 98px;
+}
+main .m-left .ml-form form .own-information {
+  padding-left: 11px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+main .m-left .ml-form form .own-information #no {
+  margin-left: 21px;
+}
+main .m-left .ml-form form #submit-btn {
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  border: none;
+  width: 97px;
+  height: 30px;
+  background-color: #f13434;
+  border-radius: 5px;
+  margin-left: 75px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  outline: none;
+}
+main .m-left .ml-form form .tips {
+  margin-top: 5px;
+  padding-left: 55px;
+  color: #f32222;
+}
+main .m-left .ml-form form .tips.tipstel {
+  padding-left: 85px;
+}
+main .m-left .ml-form form .spantip {
+  color: #f32222;
+  margin-left: 15px;
+}
+main .m-left .ml-form .quick-msg {
+  position: absolute;
+  width: 257px;
+  height: 253px;
+  top: 176px;
+  right: 160px;
+  padding-left: 33px;
+  padding-top: 5px;
+  border-left: 1px solid #ddd;
+}
+main .m-left .ml-form .quick-msg p {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  height: 30px;
+  font-size: 14px;
+}
+main .m-left .ml-form .quick-msg #quick-nav {
+  margin-top: 23px;
+}
+main .m-left .ml-form .quick-msg #quick-nav li {
+  font-size: 14px;
+  color: #1e2629;
+  line-height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main .m-left .ml-form .quick-msg #quick-nav li:hover {
+  color: #ff0c0e;
+}
+main .m-right {
+  flex: 0 0 306px;
+}
+main .m-right .mr-recommend {
+  width: 100%;
+  border-width: 2px 1px 1px 1px;
+  border-color: #f32222 #eaeaea #eaeaea #eaeaea;
+  border-style: solid;
+  background: #fff;
+  padding: 15px;
+}
+main .m-right .mr-recommend .mrr-title {
+  height: 33px;
+  margin-bottom: 15px;
+  background: url("../images/problem/recommend_title_img.png") no-repeat center center;
+  background-size: contain;
+}
+main .m-right .mr-recommend ul {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+}
+main .m-right .mr-recommend ul li {
+  height: 125px;
+}
+main .m-right .mr-recommend ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #eaeaea;
+  justify-content: space-between;
+}
+main .m-right .mr-recommend ul li a img {
+  flex: 0 0 113px;
+  height: 87px;
+  display: block;
+  margin-top: 21px;
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+main .m-right .mr-recommend ul li a > div {
+  padding-top: 31px;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(1) {
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out 0.1s;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(2) {
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(2) i {
+  color: #ff722a;
+  font-style: normal;
+}
+main .m-right .mr-recommend ul li a > div p:nth-of-type(3) {
+  font-size: 14px;
+}
+main .m-right .mr-recommend ul li:hover a img {
+  transform: translateX(-2px);
+}
+main .m-right .mr-recommend ul li:hover p:nth-of-type(1) {
+  color: #ff0b0f;
+  transform: translateX(3px);
+}
+main .m-right .mr-recommend .huan {
+  display: block;
+  color: #ff0b0f;
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+main .m-right .mr-recommend .huan img {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+}
+main .m-right .mr-recommend .huan i {
+  font-style: normal;
+  margin-left: 4px;
+}
+main .m-right .mr-recommend .huan .runanimation {
+  animation: run360 1.5s linear infinite;
+}
+@keyframes run360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+main .m-right .mr-news {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  margin-top: 21px;
+  padding: 7px 6px 28px 6px;
+}
+main .m-right .mr-news .mrn-title {
+  height: 68px;
+  background: url("../images/problem/news_title.png") no-repeat center center;
+  background-size: contain;
+}
+main .m-right .mr-news ul {
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 18px;
+}
+main .m-right .mr-news ul li {
+  width: 260px;
+  font-size: 16px;
+  color: #4f646a;
+  overflow: hidden;
+  /*超出部分隐藏*/
+  white-space: nowrap;
+  /*不换行*/
+  text-overflow: ellipsis;
+  /*超出部分文字以...显示*/
+  position: relative;
+  margin-bottom: 10px;
+}
+main .m-right .mr-news ul li:nth-child(-n+3):before {
+  background-color: #f32222;
+}
+main .m-right .mr-news ul li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #4f646a;
+}
+main .m-right .mr-news ul li a {
+  padding-left: 15px;
+}
+main .m-right .mr-news ul li a:hover {
+  color: #f32222;
+}
+/* 正文结束 */
+/* 回答 */
+.question-box {
+  margin-left: 10px;
+}
+.question-box .question-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.question-box .question-title span {
+  flex: 1;
+}
+.question-box .question-title span:nth-of-type(1) {
+  font-size: 20px;
+  color: #1e2629;
+}
+.question-box .question-title span:nth-of-type(2) {
+  text-align: right;
+  padding-right: 22px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #4f646a;
+}
+.question-box .question-content {
+  font-size: 16px;
+  color: #4f646a;
+  margin-bottom: 22px;
+}
+.question-box .letme {
+  display: inline-block;
+  width: 60px;
+  height: 24px;
+  background-color: #f13434;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 26px;
+}
+.question-box .share {
+  color: #8aa0a6;
+  font-size: 14px;
+}
+.question-box .share i {
+  margin-right: 4px;
+  font-size: 12px;
+}
+.user-answer {
+  border: 1px solid #e1e8e8 !important;
+  background-color: #f6f8f8 !important;
+  width: 830px !important;
+  max-width: 830px !important;
+  min-width: 830px !important;
+  height: 107px !important;
+  margin: 11px 0 0 10px;
+  padding: 10px;
+  font-size: 16px !important;
+  font-family: PingFangSC-;
+}
+/* 答案部分 */
+.answer-box {
+  width: 100%;
+  margin-top: 75px;
+  clear: both;
+  position: relative;
+  border-top: 1px solid #c4d3d4;
+  padding-bottom: 20px;
+  /* 标题 */
+}
+.answer-box .ab-title {
+  position: absolute;
+  width: 89px;
+  height: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #4f646a;
+  top: -11px;
+  z-index: 123;
+  left: 0;
+  background-color: #fff;
+}
+.answer-box .ab-title i {
+  font-style: normal;
+}
+.answer-box .ab-nav {
+  /* 头像信息 */
+  /* 答案内容 */
+}
+.answer-box .ab-nav li {
+  margin-bottom: 20px;
+}
+.answer-box .ab-nav .ab-info {
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+}
+.answer-box .ab-nav .ab-info .abi-left {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  width: 125px;
+  height: 40px;
+  float: left;
+}
+.answer-box .ab-nav .ab-info .abi-left img {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.answer-box .ab-nav .ab-info .abi-left div p {
+  flex: 1;
+  font-size: 14px;
+  color: #4f646a;
+}
+.answer-box .ab-nav .ab-info .abi-right {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #8aa0a6;
+}
+.answer-box .ab-nav .ab-info .abi-right i {
+  margin-right: 16px;
+}
+.answer-box .ab-nav .answer-content {
+  font-size: 16px;
+  color: #1e2629;
+  padding-left: 42px;
+  margin-top: 29px;
+}
+.hot-problem.ans {
+  margin-top: 34px !important;
+}
+/*# sourceMappingURL=problem.css.map */
